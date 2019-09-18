@@ -46,5 +46,4 @@ Target:  ssh://vagrant@127.0.0.1:2200
 Test Summary: 1 successful, 0 failures, 0 skipped
        Finished verifying <default-vbox-nginx64> (0m0.18s).
 -----> Kitchen is finished. (0m1.73s)
-
 ```
