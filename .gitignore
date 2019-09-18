@@ -11,3 +11,5 @@ box/
 .DS_Store
 .vagrant/
 *~
+*.lock
+.kitchen/
