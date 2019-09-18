@@ -47,3 +47,10 @@ Test Summary: 1 successful, 0 failures, 0 skipped
        Finished verifying <default-vbox-nginx64> (0m0.18s).
 -----> Kitchen is finished. (0m1.73s)
 ```
+
+
+# TODO
+- [ ] Add dependencies to the README
+- [ ] Add how to install the tools to the README
+- [ ] Upload the image after it was tested 
+
