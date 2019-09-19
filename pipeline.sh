@@ -20,4 +20,4 @@ echo "==> Verify we are logged in"
 vagrant cloud auth whoami
 
 echo "==> Publish the image"
-vagrant cloud publish "${base_name}/${image_name}" ${version} ${provider} ${path}  --release -f
+vagrant cloud publish "${base_name}/${image_name}" ${version} ${provider} ${path}  --release --force
