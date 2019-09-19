@@ -1,7 +1,14 @@
 # packer-ubuntu-nginx
 This repository has the Packer and Vagrant files to create a Virtualbox image that run Nginx under Ubuntu 18 and test it with Kitchen
 
-# Validate the Packer config
+## Dependencies and installation
+
+* Packer v1.4.3: https://www.packer.io/docs/install/index.html
+* Vagrant 2.2.5: https://www.vagrantup.com/docs/installation/
+* VirtualBox: https://www.virtualbox.org/manual/ch02.html
+* Kitchen: https://kitchen.ci/docs/getting-started/installing/
+
+## Validate the Packer config
 * Set the correct token in the variable VAGRANT_CLOUD_TOKEN 
 * Make sure you have access to the "box_tag"  image in Vagrant Cloud.
 ```
@@ -9,13 +16,13 @@ $ export VAGRANT_CLOUD_TOKEN="....."
 $ packer validate nginx64.json
 ```
 
-# Create the Virtualbox image
+## Create the Virtualbox image
 
 ```
 $ packer build -force nginx64.json
 ```
 
-# Test that Nginx is installed
+## Test that Nginx is installed
 * Initialize kitchen
 ```
 $ bundle exec kitchen converge
@@ -48,7 +55,7 @@ Test Summary: 1 successful, 0 failures, 0 skipped
 -----> Kitchen is finished. (0m1.73s)
 ```
 
-# Upload the image to Vagrant Cloud
+## Upload the image to Vagrant Cloud
 You must set this environment variables according to your environment:
 ```
 MY_BASE_NAME: Your base name in Vagrant Cloud
@@ -83,10 +90,10 @@ current_version: 0.1
 providers:       virtualbox
 old_versions:    ...
 ```
-# DONE
+## DONE
 - [x] Upload the image after it was tested 
+- [x] Add dependencies to the README
+- [x] Add how to install the tools to the README
 
-# TODO
-- [ ] Add dependencies to the README
-- [ ] Add how to install the tools to the README
+## TODO
 
