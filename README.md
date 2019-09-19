@@ -19,9 +19,8 @@ $ packer validate nginx64.json
 ## Create the Virtualbox image
 
 ```
-$ packer build -force nginx64.json
+$ packer build nginx64.json
 ```
-
 ## Test that Nginx is installed
 * Initialize kitchen
 ```
